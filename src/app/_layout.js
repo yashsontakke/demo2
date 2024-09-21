@@ -1,5 +1,5 @@
 import { Stack } from 'expo-router';
-import { useColorScheme } from 'react-native';
+import { useTheme } from "../hooks/useTheme";
 import {
   MD3DarkTheme,
   MD3LightTheme,
@@ -36,7 +36,7 @@ const CombinedLightTheme = merge(LightTheme, customLightTheme);
 const CombinedDarkTheme = merge(DarkTheme, customDarkTheme);
 
 export default function RootLayout() {
-    const colorScheme = useColorScheme();
+  const { colorScheme } = useTheme();
   
   //6. Let's use the merged themes
     const paperTheme =
