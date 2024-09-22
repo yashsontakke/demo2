@@ -62,10 +62,10 @@ export default function Index() {
       />
     </View>
     <View style={styles.buttons}>
-      <Button style={[styles.button1, { backgroundColor: buttonColor }]}>
+      <Button style={[styles.button, { backgroundColor: buttonColor }]}>
         <Text style={[styles.buttonText, { color: buttonTextColor }]}>Capital</Text>
       </Button>
-      <Button style={[styles.button1, { backgroundColor: buttonColor }]}>
+      <Button style={[styles.button, { backgroundColor: buttonColor }]}>
         <Text style={[styles.buttonText, { color: buttonTextColor }]}>Campus</Text>
       </Button>
     </View>
@@ -77,6 +77,7 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex:1,
+    marginTop:7
   },
   header: {
     flex: 1/9,
@@ -85,12 +86,12 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   searchBar: {
-    // flex:1/2,
+    flex:1,
     width:'50%'
   },
   image: {
     marginLeft: 10,
-    marginRight:10
+    marginRight:10,  
   },
   iconButton: {
     marginLeft: 10,
@@ -105,9 +106,8 @@ const styles = StyleSheet.create({
   welcomeText: {
     fontSize: 24, // Set font size
     fontWeight: '900', // Make the text bold
-    color: '#52433F', // Set text color
     textAlign: 'center', // Center the text
-    padding: 10, // Add padding around the text
+    // padding: 10, // Add padding around the text
   },
   company: {
     flex: 7/18,
@@ -118,32 +118,25 @@ const styles = StyleSheet.create({
     height: '100%',
     width: '50%',
   },
-  button1: {
+  button: {
     width: '50%',
-    padding: 10, // Add padding for better touch area
-    backgroundColor: '#F6E5E2', // Button color
+    // padding: 10, // Add padding for better touch area
     borderRadius: 5, // Rounded corners
     marginRight: 5, // Space between buttons
   },
-  button2: {
-    width: '50%',
-    padding: 10, // Add padding for better touch area
-   backgroundColor: '#F6E5E2', // Button colorn color
-    borderRadius: 5, // Rounded corners
-    marginLeft: 5, // Space between buttons
-  },
+
   buttons: {
     flex: 2/18,
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "row",
     marginTop : (1/18)*height,
+    marginHorizontal:10
   }
   ,
   buttonText: {
     fontSize: 18, // Set font size
     fontWeight: '900', // Make the text bold
-    color: '#52433F', // Set text color
     textAlign: 'center', // Center the text
     padding: 10, // Add padding around the text
   }
