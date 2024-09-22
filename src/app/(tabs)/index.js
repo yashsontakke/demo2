@@ -57,8 +57,9 @@ export default function Index() {
     <View style={styles.company}>
       <Image style={styles.companyimage}
         source={{
-          uri: "https://media.licdn.com/dms/image/v2/D5605AQF8rNEvYF7L5g/feedshare-thumbnail_720_1280/feedshare-thumbnail_720_1280/0/1686665424139?e=2147483647&v=beta&t=9CEO0cJxmGoeLTh6y4OvshuiXDmxeTmQTzU1CxXCO1g",
+          uri: "https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/px8dkptpqet9hrjqupqc",
         }}   
+        resizeMode="contain"
       />
     </View>
     <View style={styles.buttons}>
@@ -113,10 +114,12 @@ const styles = StyleSheet.create({
     flex: 7/18,
     justifyContent: "center",
     alignItems: "center",
-  },
+
+   },
   companyimage:{
     height: '100%',
     width: '50%',
+    backgroundColor: '#E5D7D3'
   },
   button: {
     width: '50%',
