@@ -115,11 +115,13 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
 
+
    },
   companyimage:{
     height: '100%',
     width: '50%',
-    backgroundColor: '#E5D7D3'
+    backgroundColor: '#E5D7D3',
+    borderRadius: 5
   },
   button: {
     width: '50%',
