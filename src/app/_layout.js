@@ -43,8 +43,7 @@ export default function RootLayout() {
       colorScheme === "dark" ? CombinedDarkTheme : CombinedLightTheme;
   
     return (
-      <PaperProvider theme={paperTheme}>
-        
+      <PaperProvider theme={paperTheme}>        
         <ThemeProvider value={paperTheme}>
           <Stack>
             <Stack.Screen
